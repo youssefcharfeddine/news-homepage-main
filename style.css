@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+  body{
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  
+  
+
+  }
+
+  header{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    gap: 23rem;
+    
+  }
+
+  header nav ul {
+    display: flex;
+    gap: 2.3rem;
+    list-style-type: none;
+   
+  }
+
+  header img{
+    margin-left: 29px;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    color:hsl(236, 13%, 42%);
+  }
+  header nav ul li a:hover{
+    color:hsl(5, 85%, 63%) ;
+  }
+
+  .side_bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 150vh;
+    width: 280px;
+    z-index: 999;
+    background-color: hsl(36, 100%, 99%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -200px 2px 0px 250vh rgba(0,0,0,0.41);
+  }
+  .side_bar img{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    
+  }
+  ul li img {
+    display: none;
+  }
+
+
+  section{
+    
+    display: grid;
+    grid-template-columns: 25% 25% 25% ;
+    grid-template-areas: "grid_one grid_one grid_two"
+                         "grid_three grid_four grid_two"
+                         "grid_five grid_sexe grid_seven"
+                                                          ;
+                           place-content: center;
+                           gap: 1.5rem;
+                                                  
+                                                         
+  }
+
+
+  .grid_one{
+    grid-area: grid_one;
+
+  }
+
+  
+
+  .grid_two{
+    grid-area: grid_two;
+    background-color: hsl(240, 100%, 5%);;
+  }
+  .grid_two_text{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+
+hr{
+border-color:hsl(236, 13%, 42%) ;
+margin-top: 1rem;
+}
+
+  .grid_two h1{
+    color: hsl(35, 77%, 62%) ;
+  }
+  .grid_two h2{
+    color: hsl(36, 100%, 99%);
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  .grid_two h2:hover{
+    color: hsl(35, 77%, 62%) ;
+  }
+  .grid_two p{
+    color:  hsl(233, 8%, 79%)
+
+  }
+  .grid_three{
+    grid-area: grid_three;
+  }
+  .grid_three h1{
+    font-size: 3.3rem;
+    line-height: 50px;
+    color: hsl(240, 100%, 5%);;
+  }
+  .grid_four{
+    grid-area: grid_four;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+  }
+
+
+  .grid_four p {
+    color: hsl(236, 13%, 42%);
+  }
+  
+  button{
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    padding: 10px;
+    width: 150px;
+    letter-spacing: 3px;
+    color: hsl(240, 100%, 5%); 
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  button:hover{
+    color:hsl(36, 100%, 99%) ;
+    background-color:hsl(240, 100%, 5%) ;
+  }
+
+
+
+  .grid_five{
+    grid-area: grid_five;
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  .grid_five img {
+    height: 50%;
+  }
+  .grid_sexe{
+    grid-area: grid_sexe;
+    display: flex;
+    gap: 1.2rem;
+  }
+  .grid_sexe img{
+    height: 50%;
+  }
+  .grid_seven{
+    grid-area: grid_seven;
+    display: flex;
+    gap: 1.2rem;
+  }
+  .grid_seven img{
+    height: 50%;
+  }
+
+  .grid_five h1,.grid_sexe h1,.grid_seven h1{
+    color: hsl(5, 85%, 63%);
+  }
+  .grid_five p,.grid_sexe p,.grid_seven p{
+    color: hsl(236, 13%, 42%);
+    font-size: 0.9rem;
+  }
+.grid_five h2,.grid_sexe h2,.grid_seven h2{
+    color: hsl(240, 100%, 5%);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.grid_five h2:hover,.grid_sexe h2:hover,.grid_seven h2:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+
+@media (max-width:850px){
+.Hide_onmobile{
+ display: none;
+}
+
+ul li img {
+    display: block;
+  }
+}
+
+@media (max-width:760px){
+    section{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    }
+
+  @media (max-width:500px){
+    section{
+     width:445px 
+    }
+    ul li img {
+    display: block;
+    margin-right: 50px;
+    
+  }
+  }
+
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+<header>
+  <img src="assets/images/logo.svg" alt="Logo">
+<nav>
+  <ul class="side_bar">
+   <li onclick="hidesidebar()"><a href="#"><img src="assets/images/icon-menu-close.svg" alt="menu_icon"></a></li> 
+    <li><a href="">Home</a></li>
+    <li><a href="">New</a></li>
+    <li><a href="">Popular</a></li>
+    <li><a href="">Tranding</a></li>
+    <li><a href="">Categories</a></li>
+  </ul>
+<ul>
+  <li class="Hide_onmobile"><a href="">Home</a></li>
+  <li class="Hide_onmobile"><a href="">New</a></li>
+  <li class="Hide_onmobile"><a href="">Popular</a></li>
+  <li class="Hide_onmobile"><a href="">Tranding</a></li>
+  <li class="Hide_onmobile"><a href="">Categories</a></li>
+  <li onclick="Showsidebar()"><a href="#"><img src="assets/images/icon-menu.svg" alt="menu_icon"></a></li>
+</ul>
+</nav>
+</header>
+  <section>
+
+   <div class="grid_one">
+    <img src="assets/images/image-web-3-desktop.jpg" alt="desktop_img">
+   </div>
+
+
+   <div class="grid_three">
+    <h1> The Bright Future of Web 3.0?</h1>
+   </div>
+
+
+   <div class="grid_four">
+    <p> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+     But is it really fulfilling its promise?</p>
+    <button>READ MORE</button>    
+ </div>
+ 
+   <div class="grid_two">
+      <div class="grid_two_text">
+    <h1>New </h1>
+    <div> 
+    <h2>Hydrogen VS Electric Cars</h2> 
+    <p>Will hydrogen-fueled cars ever catch up to EVs?</p> 
+    <hr>  
+  </div>
+    <div>
+    <h2>The Downsides of AI Artistry</h2>
+    <p>What are the possible adverse effects of on-demand AI image generation?</p>
+    <hr>
+  </div>
+    <div>
+  <h2>Is VC Funding Drying Up?</h2>
+  <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+</div>
+  </div>
+   </div>
+
+
+
+  
+
+   <div class="grid_five">
+    <img src="assets/images/image-retro-pcs.jpg" alt="retro_game">
+    <div>
+   <h1>01</h1> 
+   <h2>Reviving Retro PCs</h2>
+   <p>What happens when old PCs are given modern upgrades?</p> 
+  </div>
+   </div>
+
+
+   <div class="grid_sexe">
+    <img src="assets/images/image-top-laptops.jpg" alt="top_laptops">
+    <div>
+   <h1>02</h1>    
+    <h2>Top 10 Laptops of 2022</h2>
+    <p>Our best picks for various needs and budgets.</p>
+  </div>
+   </div>
+
+
+
+   <div class="grid_seven">
+    <img src="assets/images/image-gaming-growth.jpg" alt="Growth_gaming">
+    <div>
+   <h1>03</h1>
+   <h2>The Growth of Gaming</h2>
+  <p>How the pandemic has sparked fresh opportunities.</p>
+</div>
+  </div>
+  </section>
+
+
+</body>
+<script>
+function Showsidebar(){
+  const sidebar=document.querySelector('.side_bar')
+  sidebar.style.display='flex'
+}
+
+function hidesidebar(){
+  const sidebar=document.querySelector('.side_bar')
+  sidebar.style.display='none'
+}
+</script>
+
+
+</html>
